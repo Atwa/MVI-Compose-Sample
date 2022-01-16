@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<navigation xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/mobile_navigation"
+    app:startDestination="@+id/movies">
+
+    <fragment
+        android:id="@+id/movies"
+        android:name="com.example.mvi_compose_sample.feature.movies.view.MoviesFragment"
+        android:label="movies" />
+
+    <fragment
+        android:id="@+id/details"
+        android:name="com.example.mvi_compose_sample.feature.details.view.DetailsFragment"
+        android:label="Profile">
+        <argument
+            android:name="userId"
+            app:argType="string" />
+    </fragment>
+
+</navigation>
